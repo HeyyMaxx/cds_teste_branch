@@ -6,10 +6,17 @@ def gather_data_alternate():
     return n1, n2, op
 
 
+def get_operation():
+    op = input("Operation:")
+
+    return op
+
+
 def gather_data():
     n1 = int(input("First Value:"))
     n2 = int(input("Second Value:"))
-    op = input("Operation:")
+
+    op = get_operation()
 
     return n1, n2, op
 
@@ -18,6 +25,7 @@ def main():
     n1, n2, op = gather_data_alternate()
 
     print(eval(n1+op+n2))
+
     return None
 
 
