@@ -1,3 +1,5 @@
+import test
+
 def gather_data_alternate():
     n1 = int(1265)
     n2 = int(300)
